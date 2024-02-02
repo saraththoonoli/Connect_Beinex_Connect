@@ -1,0 +1,55 @@
+@import "../../../../assets/scss/base/colors.scss";
+@import "../../../../assets/scss/base/mixins.scss";
+@import "../../../../assets/scss/base/font_family.scss";
+
+.bnx-subscribe {
+    background-color: $ColourFive;
+    color: $ColourOne;
+    padding: 2rem;
+    margin: -3.5rem 1.1rem 0 2rem;
+    position: absolute;
+    width: calc(100vw - 5rem);
+    overflow: auto;
+    font-family: $font;
+
+    h4 {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    p {
+        font-weight: 100;
+        font-size: 14px;
+
+    }
+
+    .input-group {
+        margin: 0;
+    }
+
+    button {
+        background: $ColourSix;
+        color: $ColourOne;
+        border: none;
+        text-align: center;
+        width: 50px;
+        height: 45px;
+        border-radius: 0;
+    }
+
+    .subscribe-search-bar {
+        display: grid;
+        align-items: center;
+
+        input {
+            border-radius: 0;
+
+        }
+    }
+
+    /* Mobile Responsive Adjustments */
+    @media (max-width: 768px) {
+        margin: 0;
+        width: 100%;
+    }
+}

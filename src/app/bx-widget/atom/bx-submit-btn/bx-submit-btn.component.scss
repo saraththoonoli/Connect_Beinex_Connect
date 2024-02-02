@@ -1,0 +1,32 @@
+@import "../../../../assets/scss/base/colors.scss";
+@import "../../../../assets/scss/base/mixins.scss";
+
+.bx-submit-btn{
+    display: flex;
+    background: rgba(16, 56, 91, 1);
+    color: $white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    align-items: inherit;
+}
+@include mobile{
+    .bx-submit-btn{
+        display: flex;
+        background: rgba(16, 56, 91, 1);
+        color: $white;
+        border: none;
+        width: 160px;
+        height: 40px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-around;
+        align-items: inherit;
+        margin: auto;
+    }
+}

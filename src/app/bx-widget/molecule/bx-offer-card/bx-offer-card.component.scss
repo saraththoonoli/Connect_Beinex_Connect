@@ -1,0 +1,62 @@
+@import "../../../../assets/scss/base/colors.scss";
+@import "../../../../assets/scss/base/mixins.scss";
+@import "../../../../assets/scss/base/variables.scss";
+@import "../../../../assets/scss/base/fonts.scss";
+
+
+
+.bnx-industry {
+  background: radial-gradient(circle at 1.8% 4.8%, rgb(17, 23, 58) 0%, rgb(58, 85, 148) 90%);
+  
+}
+
+.head {
+  text-align: center;
+  h1{
+    font-family: $WeightTwo;
+    @include defaultH1Styles;
+    
+  }
+}
+
+.bnx-cards {
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 131px;
+  text-align: start;
+}
+
+.card {
+  width: 406px;
+  height: 416px;
+  text-align: start;
+}
+
+h1 {
+  font-family: Poppins;
+  color: $ColourOne;
+}
+
+.discription {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  color: $ColourOne;
+  text-align: start;
+}
+.description h3::after {
+    position: absolute;
+    top: 0;
+    right: -43px; 
+    width: 2px;
+    height: 43px; 
+    background-color: #000; 
+    text-align: start;
+  }
+  @include mobile{
+    .bnx-cards {
+        margin: auto;
+        padding-bottom: 0px;
+        text-align: start;
+    }
+  }

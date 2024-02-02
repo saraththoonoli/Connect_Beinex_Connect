@@ -1,0 +1,31 @@
+@import '../../../../assets/scss/base/mixins.scss';
+
+.bx-form {
+    display: flex;
+    flex-direction: column;
+    width: 105%;
+    height: 500px;
+
+}
+.warning{
+    color: red;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+/* Media query for small screens */
+@media (min-width: 576px) {
+
+    .bx-form__row__left,
+    .bx-form__row__right {
+        width: 50%;
+    }
+}
+
+@include mobile {
+    .bx-form__row__left[_ngcontent-ng-c2467472807] {
+        width: 100% !important;
+        padding-bottom: 10px;
+    }
+ 
+}

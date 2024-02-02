@@ -1,0 +1,62 @@
+@import "../../../../assets/scss/base/colors.scss";
+@import "../../../../assets/scss/base/mixins.scss";
+
+.footer-main {
+    display: grid;
+    padding: 100px 2rem 4.5rem 2rem;
+    background: linear-gradient(72deg, #23133F 9.81%, #08205C 50.72%, #01326A 93.38%);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+
+
+
+    .f-sec1,
+    .f-sec2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 0;
+
+        p {
+            color: $ColourOne;
+            font-weight: 600;
+        }
+
+        a {
+            color: $ColourOne;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 0px;
+        }
+    }
+
+    .f-sec2 {
+        flex-direction: row;
+
+        .col-6 {
+            width: 50%;
+        }
+    }
+
+    .border-rght {
+        border-right: 1px solid #6b6b6b;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        height: 1000px;
+
+        .border-rght {
+            img {
+                padding-top: 120px;
+                overflow: hidden;
+            }
+        }
+    }
+}

@@ -1,0 +1,173 @@
+<div class="col-xl-12 bnx-form pt-5">
+  <form class="formGroup" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div>
+      <div class="row col-12 pb-4">
+        <div class="bx-form__row__left">
+          <app-bx-input-field
+            [type]="'text'"
+            [name]="'name'"
+            [control]="$any(myForm).get('name')"
+            [placeHolder]="'Name'"
+            [iconSrc]="'../../../../assets/icons/form-icons/person.svg'"
+          ></app-bx-input-field>
+          <div
+            class="warning"
+            *ngIf="
+              myForm.get('name')?.invalid &&
+              (myForm.get('name')?.dirty || myForm.get('name')?.touched)
+            "
+          >
+            <div *ngIf="myForm.get('name')">Name is required.</div>
+          </div>
+        </div>
+        <div class="bx-form__row__right">
+          <app-bx-input-field
+            [type]="'text'"
+            [name]="'company'"
+            [control]="$any(myForm).get('company')"
+            [placeHolder]="'Company'"
+            [iconSrc]="'../../../../assets/icons/form-icons/Path 279.svg'"
+          ></app-bx-input-field>
+          <div
+            class="warning"
+            *ngIf="
+              myForm.get('company')?.invalid &&
+              (myForm.get('company')?.dirty || myForm.get('company')?.touched)
+            "
+          >
+            <div *ngIf="myForm.get('company')">Company is required.</div>
+          </div>
+        </div>
+      </div>
+      <!-- row -->
+      <div class="row pb-4 col-12">
+        <div class="bx-form__row__left">
+          <app-bx-input-field
+            [type]="'email'"
+            [name]="'email'"
+            [control]="$any(myForm).get('email')"
+            [placeHolder]="'Email Id'"
+            [iconSrc]="'../../../../assets/icons/form-icons/Path 263.svg'"
+          ></app-bx-input-field>
+          <div
+            class="warning"
+            *ngIf="
+              myForm.get('email')?.invalid &&
+              (myForm.get('email')?.dirty || myForm.get('email')?.touched)
+            "
+          >
+            <div *ngIf="myForm.get('email')">Email is required.</div>
+          </div>
+        </div>
+        <div class="bx-form__row__right">
+          <app-bx-input-field
+            [type]="'text'"
+            [name]="'job'"
+            [control]="$any(myForm).get('job')"
+            [placeHolder]="'job role'"
+            [iconSrc]="'../../../../assets/icons/form-icons/Path 281.svg'"
+          ></app-bx-input-field>
+          <div
+            class="warning"
+            *ngIf="
+              myForm.get('job')?.invalid &&
+              (myForm.get('job')?.dirty || myForm.get('job')?.touched)
+            "
+          >
+            <div *ngIf="myForm.get('job')">Job role is required.</div>
+          </div>
+        </div>
+      </div>
+      <!-- row -->
+      <div class="row pb-4 col-12">
+        <div class="bx-form__row__left">
+          <app-bx-input-field
+            [type]="'number'"
+            [name]="'phone'"
+            [control]="$any(myForm).get('phone')"
+            [placeHolder]="'Phone'"
+            [iconSrc]="'../../../../assets/icons/form-icons/Path 274.svg'"
+          ></app-bx-input-field>
+          <div
+            class="warning"
+            *ngIf="
+              myForm.get('phone')?.invalid &&
+              (myForm.get('phone')?.dirty || myForm.get('phone')?.touched)
+            "
+          >
+            <div *ngIf="myForm.get('phone')">Mobile number is required.</div>
+          </div>
+        </div>
+        <div class="bx-form__row__right">
+          <app-bx-rounnd-btn
+            [type]="'text'"
+            [name]="'country'"
+            [control]="$any(myForm).get('country')"
+            [iconSrc]="'../../../../assets/icons/form-icons/Path 276.svg'"
+          ></app-bx-rounnd-btn>
+          <div
+            class="warning"
+            *ngIf="
+              myForm.get('country')?.invalid &&
+              (myForm.get('country')?.dirty || myForm.get('country')?.touched)
+            "
+          >
+            <div *ngIf="myForm.get('country')">Country is required.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- row     -->
+      <div class="row pb-4">
+        <app-bx-text-area
+          [name]="'message'"
+          [control]="$any(myForm).get('message')"
+          [placeHolder]="'Your Message for Us'"
+          [iconSrc]="'../../../../assets/icons/form-icons/Path 267.svg'"
+        ></app-bx-text-area>
+      </div>
+
+      <div class="bx-form__row">
+        <app-bx-label [labelText]="'What are you looking for?'"></app-bx-label>
+      </div>
+
+      <!-- badge  -->
+      <div class="pt-3">
+        <app-bx-round-badge></app-bx-round-badge>
+      </div>
+      <!-- badge -->
+
+      <div class="bx-form__row pt-4 pb-2">
+        <app-bx-label
+          [labelText]="
+            'What you think we should know about you or your project:'
+          "
+        ></app-bx-label>
+      </div>
+
+      <div class="bx-form__row pb-4">
+        <app-bx-text-area
+          [name]="'comment'"
+          [control]="$any(myForm).get('comment')"
+          [placeHolder]="'YourText here'"
+          [iconSrc]="'../../../../assets/icons/form-icons/person.svg'"
+        ></app-bx-text-area>
+      </div>
+
+      <div class="bx-form__row bx-form__row--row1 d-flex text-center">
+        <app-bx-label
+          [labelText]="'Upload more info as a MS.Word or PDF file:'"
+        ></app-bx-label>
+
+        <app-bx-file-upload
+          [name]="'inputFile'"
+          [control]="$any(myForm).get('inputFile')"
+        ></app-bx-file-upload>
+      </div>
+
+      <div class="bx-form__row bx-form__row--row1 pt-4">
+        <app-bx-submit-btn [btnText]="'Submit'"></app-bx-submit-btn>
+      </div>
+    </div>
+  </form>
+</div>

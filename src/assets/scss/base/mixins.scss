@@ -1,0 +1,33 @@
+
+
+@mixin defaultH1Styles {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  @mixin defaultDiscriptionStyle{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+  }
+
+@mixin mobile{
+    @media only screen and (max-width:712px){
+        @content;
+    }
+}
+
+
+@mixin tablet{
+    @media only screen and (max-width: 992px) { 
+        @content;  
+        } 
+}

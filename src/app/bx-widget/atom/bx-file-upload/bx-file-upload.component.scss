@@ -1,0 +1,21 @@
+
+@import '../../../../assets/scss/base/colors.scss';
+@import '../../../../assets/scss/base/variables.scss';
+@import '../../../../assets/scss/base/fonts.scss';
+
+#file-input {
+    display: none;
+  }
+
+  #file-input-label {
+    font-size: 15px;
+    padding: 10px 15px;
+    border: 1px solid rgb(139, 137, 137);
+    border-radius: 4%;
+    margin-left: 20px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background-color: $backgroundtwo;
+    color:$ColouTwo;
+  }

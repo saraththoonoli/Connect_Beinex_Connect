@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="description">
+      <div class="flex-container">
+        <h3>{{ title }}</h3>
+        <span><img [src]="imagePath" alt="" /></span>
+      </div>
+      <div *ngFor="let row of rows">
+        <div class="bnx-card-description_lines">
+          <img [src]="row.iconPath" alt="Icon" /> &nbsp;
+          <span>{{ row.title }}</span>
+        </div>
+      </div>
+      <div *ngFor="let row of rowss">
+        <div class="bnx-card-description_lines">
+          &nbsp;
+          <span>{{ row.title }}</span>
+        </div>
+      </div>
+      <p>{{ description }}</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,58 @@
+@import "../../../../assets/scss/base/colors.scss";
+@import "../../../../assets/scss/base/mixins.scss";
+@import "../../../../assets/scss/base/variables.scss";
+@import "../../../../assets/scss/base/fonts.scss";
+
+
+.card {
+    width: 406px;
+    height: 416px;
+    background-color: $ColourSeven; 
+  }
+  
+  .description {
+    padding: $PxFour; 
+  }
+  
+  .flex-container {
+    display: flex;
+    align-items: center; 
+  }
+  
+  h3 {
+    margin-right: $h3;
+    color: $ColourOne;
+  }
+  
+  img {
+    max-height: 100%;
+  }
+  
+  p {
+    color: $ColourOne;
+    padding-top: $PxThree;
+    font-size: $p;
+    opacity: 50%;
+  }
+  .bnx-card-description_lines{
+    padding-bottom: 25px;
+    padding-top: 5px;
+    color: $ColourOne;
+    font-weight: $WeightOne;
+    font-size: $p2;
+    justify-content: start;
+    padding-left: 4px;
+   
+  }
+ 
+  @media (max-width: 768px) {
+    .flex-container {
+      text-align: start;
+      margin: auto;
+    }
+    .card{
+        text-align: start;
+        height: 350px;
+    }
+   
+  }

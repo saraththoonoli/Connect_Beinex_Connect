@@ -1,0 +1,31 @@
+@import '../../../../assets/scss/base/colors.scss';
+@import '../../../../assets/scss/base/variables.scss';
+@import '../../../../assets/scss/base/fonts.scss';
+
+
+.display{
+    height: 100vh;
+    .table-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    
+    .table {
+    
+        border-collapse: collapse;
+        width: 80%;
+    }
+    
+    .table th,
+    .table td {
+        border: 1px solid $ColourThree;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    .table th {
+        background-color: $box;
+    }
+}

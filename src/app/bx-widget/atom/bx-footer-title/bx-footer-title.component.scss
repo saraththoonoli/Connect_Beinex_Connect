@@ -1,0 +1,33 @@
+@import '../../../../assets/scss/base/colors.scss';
+@import '../../../../assets/scss/base/variables.scss';
+@import '../../../../assets/scss/base/fonts.scss';
+
+
+.bx-title {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: $ColourOne;
+
+    &__sub {
+        display: flex;
+    }
+
+    &__img {
+        width: 30px;
+        height: auto;
+
+        &--middle {
+            display: none;
+        }
+
+    }
+
+    &__text {
+        font-size: $p2;
+
+    }
+
+}

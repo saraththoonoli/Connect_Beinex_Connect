@@ -1,0 +1,31 @@
+
+
+.bnx-primary-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 3.2rem;
+}
+
+.bnx-header-left {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .bnx-primary-header {
+      flex-direction: column;
+      padding: .5rem;
+  }
+
+  .bnx-header-left {
+      text-align: center;
+      font-size: 10px;
+      width: 100%;
+      justify-content: center;
+  }
+
+  .bnx-header-left img {
+      margin: 0.5rem;
+  }
+}

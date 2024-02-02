@@ -1,0 +1,83 @@
+@import "../../../../assets/scss/base/mixins.scss";
+@import "../../../../assets/scss/base/font_family.scss";
+
+.bx-footer-bottom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 158px;
+    background-color: #150D2B;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-family: $font;
+    &__top{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__text{
+        color: #fff;
+        opacity: 0.8;
+        font-size: 14px;
+        margin-top: 10px;
+        opacity: 40%;
+        font-weight: 400;
+    }
+    &__sec1, &__sec2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        border-right: 1px solid gray;
+        margin-right: 50px; 
+
+    }
+   
+
+}
+
+@include mobile{
+    .bx-footer-bottom{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 158px;
+        background-color: #150D2B;
+        color: #fff;
+        //padding: 20px;
+        align-items: center;
+        justify-content: center;
+        &__top{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        &__text{
+            color: #fff;
+            opacity: 0.8;
+            font-size: 10px;
+            margin-top: 10px;
+        }
+        &__sec1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            border-right: 1px solid gray;
+            margin-right: 50px;
+    
+         
+    
+        }
+        &__sec2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            border-right: 1px solid gray;
+            margin-right: 50px;
+         
+    
+        }
+    
+    }
+}

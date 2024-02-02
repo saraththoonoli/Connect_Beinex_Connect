@@ -1,0 +1,4 @@
+<button [style.background-color]="backgroundColor" [style.color]="textColor" (click)="click()">
+  <img *ngIf="icon" [src]="icon" alt="Button Icon" class="icon" />
+  {{ text }}
+</button>

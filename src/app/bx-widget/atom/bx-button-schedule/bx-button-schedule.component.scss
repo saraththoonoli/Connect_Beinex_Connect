@@ -1,0 +1,63 @@
+@import '../../../../assets/scss/base/colors.scss';
+@import '../../../../assets/scss/base/mixins.scss';
+
+.bx-navbar_button {
+   display: flex;
+   background-color: $color;
+   color: $ColourOne;
+   height: 25px;
+   width: 160px;
+   margin-right: 50px;
+   margin-top: 10px;
+   border: none;
+
+   &--blue {
+      margin-left: 50;
+      margin-right: 50px;
+      margin-top: 0;
+      width: 200px;
+      height: 30px;
+      color: $colourNine;
+      background: none;
+      font-size: 18px;
+      font-style: normal;
+   }
+
+
+}
+
+.bx-navbar_button--blue:hover {
+   transform: scale(0.9);
+}
+
+.bx-navbar_buttonIcon {
+   height: 20px;
+   width: 20px;
+   margin-left: 10px;
+
+}
+
+.bx-inner_rectangle {
+   height: 20px;
+   width: 130px;
+   margin-left: 10px;
+
+   &--blue {
+      width: 190px;
+      height: 30px;
+   }
+
+}
+
+@include mobile{
+.icon{
+   height: 15px;
+   width: 90px;
+   text-align: center;
+
+}
+button{
+   margin-left: 20px;
+}
+
+}

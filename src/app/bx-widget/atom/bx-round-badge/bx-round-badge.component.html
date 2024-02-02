@@ -1,0 +1,15 @@
+<div
+  class="btn-group d-flex flex-wrap"
+  role="group"
+  aria-label="Basic checkbox toggle button group"
+>
+  <div class="btn-group-toggle" data-toggle="buttons">
+    <label
+      *ngFor="let item of checkboxItems"
+      class="btn btn-outline-primary me-2"
+    >
+      <input type="checkbox" class="btn-check" autocomplete="off" />
+      {{ item.label }}
+    </label>
+  </div>
+</div>

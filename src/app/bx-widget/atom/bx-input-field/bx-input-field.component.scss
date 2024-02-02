@@ -1,0 +1,70 @@
+@import "../../../../assets/scss/base/mixins.scss";
+
+.bx-input-div {
+    display: flex;
+    border: 1px solid rgb(190, 187, 187);
+    width: 351px;
+    justify-content: space-between;
+
+    &__img {
+        width: 25px;
+        height: 20px;
+    }
+
+    &__style {
+        border: none;
+        width: 320px;
+        height: 30px;
+    }
+}
+
+.bx-input-div__style:focus {
+    outline: none;
+}
+
+@include mobile {
+    .bx-input-div {
+        border: 1px solid rgb(190, 187, 187);
+        margin: auto;
+        align-items: center;
+        width: 68%  !important;
+        height: auto;
+        margin-left: 80px;
+        text-align: center;
+
+        &__img {
+            width: 15px;
+            height: 15px;
+        }
+
+        &__style {
+            border: none;
+            width: 130px;
+            height: 30px;
+            position: relative;
+            margin-left: 10px;
+            align-items: center;
+        }
+    }
+
+    .bx-input-div__style:focus {
+        display: none;
+    }
+}
+@include tablet {
+    .bx-input-div {
+        width: 50%; 
+        margin-left: auto;
+        margin-right: auto;
+
+        &__img {
+            width: 20px;
+            height: 20px;
+        }
+
+        &__style {
+            width: 200px; 
+            height: 40px; 
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<div class="bx-input-div">
+    <div>
+      <select
+        class="bx-input-div__style"
+        name="{{ name }}"
+        [formControl]="control"
+      >
+        <option class="placeHolder" value="" disabled hidden>Select your country</option>
+        <option [value]="null" disabled selected>{{ placeHolder }}</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="uk">UK</option>
+      </select>
+    </div>
+    <div>
+      <img class="bx-input-div__img" [src]="iconSrc" alt="icon" />
+    </div>
+    &nbsp;
+  </div>
+  
